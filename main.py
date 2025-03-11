@@ -1,6 +1,12 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
+import os
+weather_api_key = os.getenv("WEATHER_API_KEY")  # Retrieve from environment variable
+if not weather_api_key:
+    raise ValueError("API key is missing. Set WEATHER_API_KEY as an environment variable.")
+print(f"API key: {weather_api_key}")
+
 app = FastAPI()
 
 app.add_middleware(
