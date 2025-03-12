@@ -1,11 +1,19 @@
 from fastapi import FastAPI
 from config import WEATHER_API_KEY
 from middleware import setup_middleware
-from routes import health
+# from . import health
 
 app = FastAPI()
 
-app.include_router(health.router)
+from fastapi import APIRouter
+
+router = APIRouter()
+
+@router.get("/api/v1/alive")
+def alive():
+    return {"message": "Cthulhu F'thagn!"}
+
+app.include_router(router)
 
 if __name__ == "__main__":
     import uvicorn
