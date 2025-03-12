@@ -16,7 +16,7 @@ API to for the cthulhualtar to consume
     - WEATHER_API_KEY
 
 ## Run
-- Local & Azure Startup Command : gunicorn -k uvicorn.workers.UvicornWorker -w 4 app.main:app
+- Local & Azure Startup Command : gunicorn -k uvicorn.workers.UvicornWorker -w 4 main:app
 
 ## API
 - [Weather API](https://www.weatherapi.com/api-explorer.aspx#astronomy)

@@ -1,7 +1,7 @@
 from fastapi import FastAPI
-from app.config import WEATHER_API_KEY
-from app.middleware import setup_middleware
-from app.routes import health
+from config import WEATHER_API_KEY
+from middleware import setup_middleware
+from routes import health
 
 app = FastAPI()
 
