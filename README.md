@@ -14,13 +14,13 @@ API to for the cthulhualtar to consume
 ## Azure
 - RG : rg-cthulhualtar
 - Webapp : cthulhualtar-api
-- ASP : ASP-whoworeitbestrg-a40a (F1: 1)
+- ASP : cthulhualtar (F1: 1)
 - Location : Central US 
 - In the Appservice -> Settings -> Environment variables
     - WEATHER_API_KEY
 
 ## Run
-- Local & Azure Startup Command : gunicorn -k uvicorn.workers.UvicornWorker -w 4 main:app
+- Local & Azure Startup Command : gunicorn -k uvicorn.workers.UvicornWorker -w 4 app.main:app
 
 ## API
 - [Weather API](https://www.weatherapi.com/api-explorer.aspx#astronomy)
