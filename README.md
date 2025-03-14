@@ -12,6 +12,10 @@ API to for the cthulhualtar to consume
 - Mac/Linux : export WEATHER_API_KEY=your_actual_key
 
 ## Azure
+- RG : rg-cthulhualtar
+- Webapp : cthulhualtar-api
+- ASP : ASP-whoworeitbestrg-a40a (F1: 1)
+- Location : Central US 
 - In the Appservice -> Settings -> Environment variables
     - WEATHER_API_KEY
 
@@ -20,5 +24,6 @@ API to for the cthulhualtar to consume
 
 ## API
 - [Weather API](https://www.weatherapi.com/api-explorer.aspx#astronomy)
+
 
 
