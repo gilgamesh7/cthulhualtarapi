@@ -14,7 +14,7 @@ API to for the cthulhualtar to consume
 ## Azure
 - RG : rg-cthulhualtar
 - Webapp : cthulhualtar-api
-- ASP : cthulhualtar (F1: 1)
+- ASP : ASP-cthulhualtar (F1: 1)
 - Location : Central US 
 - In the Appservice -> Settings -> Environment variables
     - WEATHER_API_KEY
