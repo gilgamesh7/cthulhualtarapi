@@ -4,7 +4,13 @@ from middleware import setup_middleware
 from routers import health
 
 app = FastAPI()
+
+# Configure middleware
+setup_middleware(app)  
+
+# Include routes
 app.include_router(health.router)
+
 
 if __name__ == "__main__":
     import uvicorn
