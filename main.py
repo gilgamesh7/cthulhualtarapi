@@ -1,7 +1,7 @@
 from fastapi import FastAPI
-from config import WEATHER_API_KEY
+
 from middleware import setup_middleware
-from routers import health
+from routers import health, astronomy_prediction
 
 app = FastAPI()
 
@@ -10,6 +10,7 @@ setup_middleware(app)
 
 # Include routes
 app.include_router(health.router)
+app.include_router(astronomy_prediction.router)
 
 
 if __name__ == "__main__":
