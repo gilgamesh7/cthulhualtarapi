@@ -2,6 +2,9 @@ from fastapi import APIRouter, HTTPException
 import httpx
 from datetime import datetime, timedelta
 
+from .get_eldritch_text import get_eldritch_text
+
+
 from config import WEATHER_API_KEY
 
 router = APIRouter()
@@ -21,4 +24,4 @@ async def get_astronomy_prediction():
         response = await client.get(ASTRONOMY_API_URL, params=params)
         if response.status_code != 200:
             raise HTTPException(status_code=response.status_code, detail=response.text)
-        return response.json()
+        return get_eldritch_text(response.json())

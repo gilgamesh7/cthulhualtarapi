@@ -20,6 +20,7 @@ API to for the cthulhualtar to consume
 - Location : Central US 
 - In the Appservice -> Settings -> Environment variables
     - WEATHER_API_KEY
+    - CHATGPT_API_KEY
 
 ## Run
 - Local & Azure Startup Command : gunicorn -k uvicorn.workers.UvicornWorker -w 4 main:app
