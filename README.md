@@ -7,11 +7,13 @@ API to for the cthulhualtar to consume
 - [Astronomy Prediction](http://127.0.0.1:8000/api/v1/astroprediction)
 ## Azure
 - [Check if alive](https://cthulhualtar-api-begvgzh8guerb3ba.centralus-01.azurewebsites.net/api/v1/alive)
-- [Check if alive](https://cthulhualtar-api-begvgzh8guerb3ba.centralus-01.azurewebsites.net/api/v1/astroprediction)
+- [Astronomy Prediction](https://cthulhualtar-api-begvgzh8guerb3ba.centralus-01.azurewebsites.net/api/v1/astroprediction)
 
 # Setup
 ## Local
-- Mac/Linux : export WEATHER_API_KEY=your_actual_key
+    - Mac/Linux
+        - export WEATHER_API_KEY=your_actual_key
+        - export CHATGPT_API_KEY=your_actual_key
 
 ## Azure
 - RG : rg-cthulhualtar
